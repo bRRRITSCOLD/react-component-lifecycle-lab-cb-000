@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './components/App';
-import './style.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('global')
-);
+ReactDOM.render(<App />, document.getElementById('main'));
+
+require('./test/index-test.js'); // Leave this in!
